@@ -1,6 +1,8 @@
 import random as r
 from words import *
 
+volume = input("how many hostnames would you like to generate? ")
+
 def get_hostname_web(num):
     hostnames = []
     num = num+1
@@ -17,4 +19,4 @@ def get_hostname(num):
         hostnames.append(f"{hostname}")
     return "\n".join(hostnames)
 
-print(get_hostname(5))
+print(get_hostname(volume))
